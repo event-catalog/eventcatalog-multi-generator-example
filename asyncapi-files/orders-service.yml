@@ -163,13 +163,6 @@ components:
     OrderCancelled:
       description: 'Event triggered when an order is cancelled'
       x-eventcatalog-message-type: event
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: event
-            description: Type of message for EventCatalog
       payload:
         type: object
         properties:
@@ -183,13 +176,6 @@ components:
     OrderCompleted:
       description: 'Event triggered when an order is completed'
       x-eventcatalog-message-type: event
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: event
-            description: Type of message for EventCatalog
       payload:
         type: object
         properties:
@@ -204,13 +190,6 @@ components:
     PaymentProcessed:
       description: 'Event triggered when a payment is processed'
       x-eventcatalog-message-type: event
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: event
-            description: Type of message for EventCatalog
       payload:
         type: object
         properties:
@@ -226,14 +205,6 @@ components:
 
     InventoryReserved:
       description: 'Event triggered when inventory is reserved for an order'
-      x-eventcatalog-message-type: event
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: event
-            description: Type of message for EventCatalog
       payload:
         type: object
         properties:
@@ -250,13 +221,6 @@ components:
     ShipmentDelivered:
       description: 'Event triggered when a shipment is delivered'
       x-eventcatalog-message-type: event
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: event
-            description: Type of message for EventCatalog
       payload:
         type: object
         properties:

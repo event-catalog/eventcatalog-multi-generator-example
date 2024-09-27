@@ -36,45 +36,24 @@ export default {
         services: [
           { path: path.join(__dirname, 'asyncapi-files', 'orders-service.yml'), id: 'Orders Service' },
           { path: path.join(__dirname, 'asyncapi-files', 'order-fulfillment-service.yml'), id: 'Order Fulfillment' },
-          { path: path.join(__dirname, 'asyncapi-files', 'inventory-service.yml'), id: 'Inventory Service' },
         ],
         domain: { id: 'orders', name: 'Orders', version: '0.0.1' },
       },
     ],
     [
-      '@eventcatalog/generator-asyncapi',
+      "@eventcatalog/generator-openapi",
       {
         services: [
-          { path: path.join(__dirname, 'asyncapi-files', 'payment-service.yml'), id: 'Payment Service' },
-          { path: path.join(__dirname, 'asyncapi-files', 'fraud-detection-service.yml'), id: 'Fraud Detection' },
+          { path: path.join(__dirname, "openapi-files", "order-api.yml"), id: 'Orders Service' }
         ],
-        domain: { id: 'payment', name: 'Payment', version: '0.0.1' },
-      },
-    ],
-    [
-      '@eventcatalog/generator-asyncapi',
-      {
-        services: [
-          { path: path.join(__dirname, 'asyncapi-files', 'user-service.yml'), id: 'User Service' },
-        ],
-        domain: { id: 'users', name: 'User', version: '0.0.1' },
-        debug: true
+        domain: { id: 'orders', name: 'Orders', version: '0.0.1' },
       },
     ],
     [
       "@eventcatalog/generator-openapi",
       {
         services: [
-          { path: path.join(__dirname, "openapi-files", "cart-api.yml"), id: 'Cart Service' },
-        ]
-      },
-    ],
-    [
-      "@eventcatalog/generator-openapi",
-      {
-        services: [
-          { path: path.join(__dirname, "openapi-files", "product-api.yml"), id: 'Product Service' },
-          { path: path.join(__dirname, "openapi-files", "order-api.yml"), id: 'Orders Service' },
+          { path: path.join(__dirname, "openapi-files", "product-api.yml"), id: 'Product Service' }
         ],
         domain: { id: 'orders', name: 'Orders', version: '0.0.1' },
       },

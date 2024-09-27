@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@eventcatalog/core": "^2.8.1",
-    "@eventcatalog/generator-asyncapi": "^2.0.0",
-    "@eventcatalog/generator-openapi": "^2.0.0"
+    "@eventcatalog/generator-asyncapi": "^2.0.2",
+    "@eventcatalog/generator-openapi": "^2.0.1"
   }
 }

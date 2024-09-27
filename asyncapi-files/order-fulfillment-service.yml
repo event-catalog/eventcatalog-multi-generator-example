@@ -63,13 +63,6 @@ components:
     FulfillmentRequested:
       description: 'Event triggered when an order fulfillment is requested'
       x-eventcatalog-message-type: event
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: event
-            description: Type of message for EventCatalog
       payload:
         type: object
         properties:
@@ -98,13 +91,6 @@ components:
     OrderShipped:
       description: 'Event triggered when an order is shipped'
       x-eventcatalog-message-type: event
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: event
-            description: Type of message for EventCatalog
       payload:
         type: object
         properties:
@@ -125,13 +111,6 @@ components:
     OrderDelivered:
       description: 'Event triggered when an order is delivered'
       x-eventcatalog-message-type: event
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: event
-            description: Type of message for EventCatalog
       payload:
         type: object
         properties:
@@ -147,15 +126,8 @@ components:
             description: Name of the person who received the order
 
     OrderCreated:
-      description: 'Command received when a new order is created'
-      x-eventcatalog-message-type: command
-      headers:
-        type: object
-        properties:
-          ec-message-type:
-            type: string
-            default: command
-            description: Type of message for EventCatalog
+      description: 'Event received when a new order is created'
+      x-eventcatalog-message-type: event
       payload:
         type: object
         properties:
